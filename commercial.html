@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commercial Bank of Ethiopia Services</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            margin: 0;
+        }
+        .nav-buttons {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .nav-buttons button {
+            background-color: #00509e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .nav-buttons button:hover {
+            background-color: #0073e6;
+        }
+        .container {
+            padding: 20px;
+        }
+        .service {
+            background-color: #ffffff;
+            margin: 15px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            position: relative;
+            cursor: pointer;
+        }
+        .service:hover {
+            transform: translateX(10px);
+        }
+        .service h2 {
+            color: #003366;
+        }
+        .service p {
+            font-size: 16px;
+            color: #333;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #003366;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Commercial Bank of Ethiopia - Services</h1>
+    <div class="nav-buttons">
+        <button onclick="window.location.href='home.html'">Home</button>
+        <button onclick="window.location.href='about.html'">About</button>
+        <button onclick="window.location.href='contact.html'">Contact</button>
+    </div>
+</header>
+
+<div class="container">
+    <div class="service" onclick="window.location.href='mobile_banking.html'">
+        <h2>Mobile Banking</h2>
+        <p>Experience the convenience of managing your bank accounts and conducting transactions from your mobile device with CBE's Mobile Banking service.</p>
+    </div>
+
+    <div class="service" onclick="window.location.href='cbe_birr_nedaj.html'">
+        <h2>CBE Birr Nedaj</h2>
+        <p>CBE Birr Nedaj is a service that allows customers to transfer funds, pay bills, and perform other transactions via mobile banking.</p>
+    </div>
+
+    <div class="service" onclick="window.location.href='cbe_birr.html'">
+        <h2>CBE Birr</h2>
+        <p>CBE Birr is a mobile-based financial service that helps customers perform everyday transactions including sending money and paying for goods and services.</p>
+    </div>
+
+    <div class="service" onclick="window.location.href='card_banking.html'">
+        <h2>Card Banking</h2>
+        <p>CBE provides card banking services for a variety of transactions, including ATM withdrawals, online purchases, and point-of-sale payments.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 Commercial Bank of Ethiopia. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

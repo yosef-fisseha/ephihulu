@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hulu Guday</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <!-- Hamburger Menu Button -->
+            <button id="menu-toggle" class="menu-toggle">
+                <i class="fas fa-bars"></i> <!-- Hamburger icon -->
+            </button>
+            <ul id="nav-links" class="right-nav">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Hulu Guday</h1>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search websites...">
+            <div id="autocomplete-results"></div>
+        </div>
+        <select id="category-filter">
+            <option value="">All Categories</option>
+        </select>
+    </header>
+
+    <main>
+        <section class="featured-websites">
+            <h2>Featured Websites</h2>
+            <div class="featured-carousel">
+                <!-- Featured websites will be dynamically inserted here by JavaScript -->
+            </div>
+        </section>
+
+        <section id="websites-container" class="websites-grid">
+            <!-- Website cards will be dynamically inserted here by JavaScript -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hulu guday. All rights reserved.</p>
+    </footer>
+
+    <div class="floating-menu">
+        <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
+        <button id="view-toggle"><i class="fas fa-th-large"></i></button>
+        <button id="random-website"><i class="fas fa-random"></i></button>
+    </div>
+
+    <button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>

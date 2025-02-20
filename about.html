@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #bbcad9;
+            color: #333;
+            text-align: center;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #004080;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: flex-end; /* Align everything to the right */
+            align-items: center;
+            padding: 15px 20px;
+        }
+
+        /* Navigation Menu */
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 15px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 0.5rem;
+            transition: all 0.3s ease;
+        }
+
+        /* Hamburger Button (Top-Right Corner) */
+        .menu-toggle {
+            display: none;
+            font-size: 28px;
+            color: white;
+            cursor: pointer;
+            background: none;
+            border: none;
+            position: absolute;
+            top: 15px;
+            right: 20px;
+        }
+
+        /* Mobile Navigation */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 200px;
+                background: #004080;
+                text-align: right; /* Align text to the right */
+                border-radius: 5px;
+                box-shadow: -2px 2px 5px rgba(0, 0, 0, 0.2);
+                padding: 10px 0;
+            }
+
+            .nav-links li {
+                margin: 15px 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+        }
+
+        /* About Section */
+        .about-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .about-container h1 {
+            color: #4a90e2;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .about-container p {
+            font-size: 1.2rem;
+            color: #555;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #004080;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i> <!-- Hamburger Icon -->
+        </button>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="about-container">
+        <h1>About Us</h1>
+        <p>Welcome to the Hulu guday, your one-stop resource for finding essential Ethiopian websites.</p>
+        <p>We curate a comprehensive list of government, utility, transportation, and other essential websites to help you navigate the digital landscape of Ethiopia.</p>
+        <p>If you have any suggestions for websites to add or improvements to our service, please don't hesitate to contact us.</p>
+    </main>
+
+    
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.nav-links').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
