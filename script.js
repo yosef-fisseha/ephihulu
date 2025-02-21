@@ -18,7 +18,7 @@ function logout() {
 const websites = [
   {
     name: "Ethiopian Immigration and Citizenship Service",
-    url: "immigration.html",
+    url: "./immigration.html",
     description: "",
     category: "Passport",
     lastUpdated: "2025-02-15",
